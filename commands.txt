@@ -1,0 +1,11 @@
+# Install
+curl -fsSL https://ollama.com/install.sh | sh
+
+# Start service
+sudo systemctl enable --now ollama
+
+# Pull the model (~4.7GB download)
+ollama pull qwen2.5-coder:7b
+
+# Run it
+ollama run qwen2.5-coder:7b
